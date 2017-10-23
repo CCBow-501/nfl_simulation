@@ -1,1 +1,21 @@
-/.gradle/
+bin/
+.project
+.settings/
+.classpath
+.gradle
+build/
+classes/
+.DS_Store
+
+# IntelliJ stuff
+.idea/
+*.iml
+out/
+
+# Vagrant
+.vagrant
+/bin-test/
+
+# Databases
+*.sql~
+target/

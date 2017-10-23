@@ -3,6 +3,7 @@ package testo.roed.simulation;
 import testo.roed.simulation.game.Field;
 import testo.roed.simulation.game.Gameclock;
 import testo.roed.simulation.game.Play;
+import testo.roed.simulation.game.PlayGenerator;
 import testo.roed.simulation.model.Result;
 import testo.roed.simulation.model.Team;
 import testo.roed.simulation.model.type.PlayType;
@@ -163,7 +164,7 @@ public class Game {
 				System.out.println(teamInPosession + " scored Touchdown");
 				homescore +=6;
 				System.out.println(hometeam + " " + homescore + " : " + roadscore + " " + roadteam);
-				if(Play.extraPoint()) {
+				if(PlayGenerator.extraPoint()) {
 					homescore++;
 					System.out.println(teamInPosession + " made XP");
 				} else {
@@ -193,7 +194,7 @@ public class Game {
 				System.out.println(teamInPosession + " scored Touchdown");
 				roadscore += 6;
 				System.out.println(hometeam + " " + homescore + " : " + roadscore + " " + roadteam);
-				if(Play.extraPoint()) {
+				if(PlayGenerator.extraPoint()) {
 					roadscore++;
 					System.out.println(teamInPosession + " made XP");
 				} else {

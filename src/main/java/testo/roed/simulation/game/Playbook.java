@@ -19,6 +19,20 @@ public class Playbook {
 		int value = r.nextInt(2);
 		PlayType playType;
 
+//		switch(down) {
+//		case 1:
+//		case 2:
+//		case 3:
+//			if(yardsToGo > 6) {
+//				playType = PlayType.Passing;
+//			}
+//		case 4:
+//			if(yardsToEndzone > 40) {
+//				if(time)
+//				playType = PlayType.Punt;
+//			}
+//		}
+
 
 
 		if(down == 4 ) {
@@ -59,7 +73,7 @@ public class Playbook {
 				}
 			}
 		}
-		return Play.generatePlay(playType, yardsToEndzone);
+		return PlayGenerator.generatePlay(playType, yardsToEndzone, timeLeft);
 	}
 
 	public static Playbook generateDefaultRunningPlaybook() {
